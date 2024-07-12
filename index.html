@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a id="logo" class="navbar-brand" href="#">Libri</a>          
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#home">Home</a>
+              </li>
+              <li  class="nav-item">
+                <a class="nav-link " href="#The_best">The best</a>
+              </li>  
+              <li  class="nav-item">
+                <a class="nav-link " href="#Section">Section</a>
+              </li> 
+              <li  class="nav-item">
+                <a class="nav-link " href="#ContactUs">ContactUs</a>
+              </li>                 
+              
+            </ul>            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section  id="home" class="content">
+      <div id=" container1" class="container m-1 ">
+        <div class="row">
+            <div id="a1" class="col-8 ">
+                <h1 >Libri</h1>
+                <p class="p1">All your books in one place
+                    To your home
+                </p>
+                <button onclick="Contact_Us()" type="button" class="btn">Shop books now</button>
+            </div>
+            <div id="a2" class="col-4">
+                
+                <img id="img1" src="images/img1.png" alt="sorry">
+            </div>
+        </div>        
+      </div>
+    </section>
+
+    <section id="The_best" class="content">
+        <div class="container ">
+            <div class="row" >
+              <div class="col">
+                <img id="im" src="images/1 (5).jpeg" class="card-img-top" alt="">           
+                 
+                 <button onclick="Contact_Us()" class="image1">Buy the book</button>               
+              </div>
+              <div class="col">
+                <img id="im" src="images/1 (2).jpeg" class="card-img-top">                                    
+                <button onclick="Contact_Us()" class="image1">Buy the book</button>                  
+              </div>
+              <div class="col">
+                <img id="im" src="images/1 (3).jpeg" class="card-img-top" alt="">                
+                <button onclick="Contact_Us()" class="image1">Buy the book</button>
+                  
+              </div>
+            </div>
+          </div>
+    </section>    
+
+    <section id="Section" class="content">      
+        <div class="section">            
+            <div class="Novels_type">
+                <div class="Novels">
+                    <h2 class="text3"><b>Novels</b></h2>
+
+                    <figure class="m1">
+                        <img src="images/1 (5).jpeg" width="400px" height="400">                                                
+                        <button onclick="Contact_Us()" class="MM"> Buy The book </button></a>
+                    </figure>
+
+                    <figure class="m1">
+                        <img src="images/1 (6).jpeg" width="400px" height="400px">                                                
+                        <button onclick="Contact_Us()" class="MM"> Buy The book </button></a>
+                    </figure>                    
+
+                </div>
+                <div class="Book">
+                    <h2 class="text3"><b>Books </b></h2>
+
+                    <figure class="g1">
+                        <img src="images/1 (7).jpeg" width="400px" height="400px">                                                
+                        <button onclick="Contact_Us()" class="MM"> Buy The book </button></a>
+                    </figure>
+
+                    <figure class="g1">
+                        <img src="images/1 (8).jpeg" width="400px " height="400px">                                                
+                        <button onclick="Contact_Us()" class="MM"> Buy The book </button></a>
+                    </figure>
+                    
+                </div>
+            </div>
+
+            
+            
+            </div>
+
+    </section> 
+
+    <section class="ContactUs" id="ContactUs">
+      <div>
+          <h3 class="con"> Contact Us </h3>
+      </div>
+      <div class="contact-section">
+          <div class="contact-info">
+              <div><i class="fa-solid fa-location-dot"></i>El Mokattam, Cairo</div>
+              <div><i class="fa-solid fa-envelope"></i>Libri@gmail.com</div>
+              <div><i class="fa-solid fa-phone"></i>+201125188536</div>
+          </div>
+
+          <div class="contact-form">
+              <form onsubmit="sendEmail(); reset(); return false;">
+                  <form action="mail.php" method="post"></form>
+                  <form class="contact" action="" method="post">
+                      <input type="name" name="name" id="name" class="text-box" placeholder="Your name" required>
+                      <input type="email" name="email" class="text-box" id="email" placeholder="Your email" required>
+                      <input type="number" name="number" class="text-box" id="number" placeholder="Your number" required>
+                      <input type="name" name="thebook_name" class="text-box" id="book" placeholder="The Book name" required>
+                      <input type="adress" name="adress" class="text-box" id="adress" placeholder="Your adress" required>
+                      
+                      <input type="submit" name="submit" class="send-btn" value="send">
+                  </form>
+          </div>
+          
+    </section>
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
